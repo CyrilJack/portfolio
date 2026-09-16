@@ -31,8 +31,8 @@ function App() {
           <h2>Ingénieur informatique</h2>
 
           <p className="hero-description">
-            Je m'intéresse au développement logiciel, à l'intelligence
-            artificielle et à la recherche opérationnelle.
+            Ingénieur informatique spécialité IA, je m'intéresse au développement logiciel d'outils d'analyse,
+            et d'automatisation, je suis actuellement à la recherche de nouvelles opportunités professionnelles
           </p>
 
           <div className="hero-buttons">

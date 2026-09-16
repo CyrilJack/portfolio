@@ -29,9 +29,9 @@ function ProjectCard({ project }) {
           ))}
         </div>
 
-        <p className="project-link">
-          Voir sur GitHub →
-        </p>
+        {project.github && (
+          <p className="project-link">Voir sur GitHub →</p>
+        )}
 
       </div>
 

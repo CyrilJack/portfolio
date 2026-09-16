@@ -15,7 +15,6 @@ const projects = [
       "Dévelopement d'une méthode permettant d'optimiser la découpe de planches",
     technologies: ["Algorithme génétique", "Python", "Optimisation Bayésienne"],
     image: "/projects/Guillotine.png",
-    github: "https://github.com/Guizmeauuu/AlgoGeneticGuillotine"
   },
 
   {
@@ -24,8 +23,7 @@ const projects = [
     description:
       "Développement d'un bot Discord permettant notamment de rechercher et de lire de la musique dans des salons vocaux.",
     technologies: ["Python", "Discord API", "FFmpeg"],
-    image: "/projects/discord.jpg",
-    github: "https://github.com/TON_USERNAME/TON_REPOSITORY"
+    image: "/projects/discord.jpg"
   },
 
   {
@@ -34,8 +32,7 @@ const projects = [
     description:
       "Développement d'une méthode algorithmique en Python pour automatiser la génération de scripts dans un environnement industriel.",
     technologies: ["Python", "IA", "RAG"],
-    image: "/projects/stmicroelectronics.png",
-    github: "https://github.com/TON_USERNAME/TON_REPOSITORY"
+    image: "/projects/ST.jpg"
   },
 
   {
