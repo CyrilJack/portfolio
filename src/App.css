@@ -5,6 +5,8 @@
    ========================= */
 
 :root {
+  color-scheme: dark;
+
   --bg: #090c10;
   --bg-elevated: #0d1117;
   --bg-card: #12161e;
@@ -42,6 +44,8 @@
 }
 
 html {
+  background: var(--bg);
+  color: var(--text);
   scroll-behavior: smooth;
   /* clip (et non hidden) : empeche le debordement horizontal
      sans creer de conteneur de defilement qui casserait le sticky */
@@ -60,6 +64,7 @@ body {
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   letter-spacing: -0.02em;
+  color: var(--text);
 }
 
 a {
@@ -220,14 +225,6 @@ a {
 .hero-description { animation-delay: 0.35s; }
 .hero-buttons { animation-delay: 0.45s; }
 
-
-.hero h1,
-.hero h2,
-.hero-description {
-  text-align: left !important;
-}
-
-
 @keyframes reveal {
   to {
     opacity: 1;
@@ -248,11 +245,17 @@ a {
   font-weight: 800;
   line-height: 1.05;
   margin-bottom: 14px;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   width: fit-content;
+  color: var(--accent); /* repli si le degrade sur texte n'est pas supporte */
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .hero h1 {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 .hero h2 {
@@ -337,6 +340,7 @@ a {
 }
 
 .section h2 {
+  color: var(--text);
   font-size: 34px;
   font-weight: 700;
   margin-bottom: 34px;
